@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="cursos">
+        <class>jpa.ejemplos2024.models.CursoEntity</class>
+        <class>jpa.ejemplos2024.models.ParticipanteEntity</class>
+        <class>jpa.ejemplos2024.models.ParticipantePagoEntity</class>
+        <class>jpa.ejemplos2024.models.UsuarioEntity</class>
+        <class>jpa.ejemplos2024.models.UsuarioSesionEntity</class>
+        <class>jpa.ejemplos2024.models.CursoImagenEntity</class>
+        <class>jpa.ejemplos2024.models.UsuarioAccionEntity</class>
+        <properties>
+
+
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/cursos"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.user" value="cursos"/>
+            <property name="jakarta.persistence.jdbc.password" value="123456"/>
+            <property name="eclipselink.jdbc.user" value="cursos"/>
+            <property name="eclipselink.jdbc.password" value="123456"/>
+        </properties>
+    </persistence-unit>
+</persistence>
