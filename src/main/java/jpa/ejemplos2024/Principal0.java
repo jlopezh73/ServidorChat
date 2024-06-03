@@ -30,7 +30,7 @@ public class Principal0 {
     }
 }
 
-class HiloAtencion0 extends Thread{
+class HiloAtencion0 extends Thread {
     private BufferedReader entrada;
     private BufferedWriter salida;
     private Socket cliente;
